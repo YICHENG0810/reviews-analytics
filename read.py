@@ -32,3 +32,22 @@ for d in data:
 		good.append(d)
 print('有', len(good), '筆留言提到good')
 print(good[0])		 
+
+#list comprehension(清單快寫法)
+#good = [d for d in data if 'good' in d]
+"""
+等於
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+"""
+#bad = ['bad' in d for d in data]
+"""
+等於
+bad = []
+for d in data:
+	bad.append('bad' in d)
+"""
+
+
