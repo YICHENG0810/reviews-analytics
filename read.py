@@ -24,3 +24,11 @@ for d in data:
 print('一共有', len(new), '筆留言長度小於100')
 print(new[0])
 print(new[1])
+
+#留言裡有提到good這個字串相關的
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('有', len(good), '筆留言提到good')
+print(good[0])		 
